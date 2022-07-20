@@ -100,4 +100,43 @@ body {
 .mt-400 {
   --margin-top: 2rem;
 }
+
+/* Composition classes */
+
+.flow > * + * {
+  margin-top: var(--margin-top, 1em);
+}
+
+/* Block classes */
+
+.heading {
+  max-width: 55ch;
+  margin: 0 auto 4rem;
+}
+
+.grid {
+  display: grid;
+  gap: 2rem 1.5rem;
+
+}
+
+.card {
+  padding: 2rem;
+  border-top: 4px solid;
+  border-radius: 0.5rem;
+  box-shadow: 0 1em 1em var(--c-neutral-200);
+  background-color: var(--c-neutral-50);
+}
+
+.card[data-color="red"] {
+  border-color: var(--c-primary-red);
+}
+.card[data-color="cyan"] {
+  border-color: var(--c-primary-cyan);
+}
+.card[data-color="orange"] {
+  border-color: var(--c-primary-orange);
+}
+.card[data-color="blue"] {
+  border-color: var(--c-primary-blue);
 }
