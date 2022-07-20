@@ -1,2 +1,34 @@
-@import "/scss/reset";
-@import "/scss/globals";
+@forward "/scss/reset";
+
+:root {
+  --c-primary-red: hsl(0, 78%, 62%);
+  --c-primary-cyan: hsl(0, 78%, 62%);
+  --c-primary-orange: hsl(34, 97%, 64%);
+  --c-primary-blue: hsl(212, 86%, 64%);
+
+  --c-neutral-100: hsl(0, 0%, 98%);
+  --c-neutral-400: hsl(229, 6%, 66%);
+  --c-neutral-800: hsl(234, 12%, 34%);
+
+  --fs-300: 0.8rem;
+  --fs-400: 15px;
+  --fs-600: 1.25rem;
+  --fs-800: 2.5rem;
+  --fs-900: 3rem;
+
+  --fs-body: var(--fs-400);
+  --fs-heading: var(--fs-800);
+
+  --ff-body: "Poppins", sans-serif;
+
+  --fw-light: 200;
+  --fw-regular: 400;
+  --fw-bold: 600;
+}
+
+body {
+  font-family: var(--ff-body);
+  font-size: var(--fs-body);
+  font-weight: var(--fw-regular);
+  color: var(--c-neutral-800);
+}
