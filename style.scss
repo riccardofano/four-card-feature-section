@@ -34,4 +34,70 @@ body {
   font-size: var(--fs-body);
   font-weight: var(--fw-regular);
   color: var(--c-neutral-800);
+  background-color: var(--c-neutral-100);
+}
+
+/* Utility classes */
+
+.text-neutral-400 {
+  color: var(--c-neutral-400);
+}
+
+.fs-small {
+  font-size: var(--fs-300);
+}
+.fs-regular {
+  font-size: var(--fs-body);
+}
+.fs-h2 {
+  font-size: var(--fs-h2);
+}
+.fs-h1 {
+  font-size: var(--fs-h1);
+}
+
+.fw-light {
+  font-weight: var(--fw-light);
+}
+.fw-regular {
+  font-weight: var(--fw-regular);
+}
+.fw-bold {
+  font-weight: var(--fw-bold);
+}
+
+.lh-300 {
+  line-height: 1.45;
+}
+.lh-600 {
+  line-height: 1.65;
+}
+
+.ls-500 {
+  letter-spacing: 0.01rem;
+}
+
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+
+.container {
+  --max-width: 74em;
+  --padding: 1rem;
+
+  width: min(var(--max-width), 100% - (var(--padding) * 2));
+  margin: 5rem auto;
+}
+
+.move-at-end {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.mt-400 {
+  --margin-top: 2rem;
+}
 }
