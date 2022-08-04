@@ -149,21 +149,31 @@ body {
 
 .card {
   padding: 2rem;
-  border-top: 4px solid;
   border-radius: 0.5rem;
+  overflow: hidden;
   box-shadow: 0 1em 1em var(--c-neutral-200);
   background-color: var(--c-neutral-50);
+  position: relative;
 }
 
-.card[data-color="red"] {
-  border-color: var(--c-primary-red);
+.card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
 }
-.card[data-color="cyan"] {
-  border-color: var(--c-primary-cyan);
+
+.card[data-color="red"]::after {
+  background-color: var(--c-primary-red);
 }
-.card[data-color="orange"] {
-  border-color: var(--c-primary-orange);
+.card[data-color="cyan"]::after {
+  background-color: var(--c-primary-cyan);
 }
-.card[data-color="blue"] {
-  border-color: var(--c-primary-blue);
+.card[data-color="orange"]::after {
+  background-color: var(--c-primary-orange);
+}
+.card[data-color="blue"]::after {
+  background-color: var(--c-primary-blue);
 }
